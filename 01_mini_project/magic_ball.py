@@ -22,3 +22,27 @@ ANSWERS = [
     'Сконцентририруйся и спроси опять',
     'Весьма сомнительно',
 ]
+
+
+def greatings():
+    print('Привет Мир, я магический шар, и я знаю ответ на любой твой вопрос.')
+    print('Как вас зовут?')
+    name = input()
+    print(f'Привет {name}!')
+
+
+def magic():
+    print('Задайте вопрос.')
+    question = input()
+    print(random.choice(ANSWERS))
+    print('Если хотите задать еще вопрос напишите "да"')
+    if input().lower() == 'да':
+        magic()
+
+
+def main():
+    greatings()
+    magic()
+
+
+main()
