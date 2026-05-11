@@ -1,5 +1,6 @@
 import random
 
+
 ANSWERS = [
     'Бесспорно',
     'Мне кажется - да',
