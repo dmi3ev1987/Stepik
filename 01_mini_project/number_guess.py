@@ -31,7 +31,9 @@ def game(number_to_guess, max_number):
         user_number = input()
         count_try += 1
         if not is_valid(user_number, max_number):
-            print(f'А  может быть все-таки введем целое число от 1 до {max_number}?')
+            print(
+                f'А  может быть все-таки введем целое число от 1 до {max_number}?'
+            )
             continue
         user_number = int(user_number)
         if user_number < number_to_guess:
@@ -39,7 +41,9 @@ def game(number_to_guess, max_number):
         elif user_number > number_to_guess:
             print('Ваше число больше загаданного, попробуйте еще разок')
         else:
-            print(f'Вы угадали число {number_to_guess} за {count_try} попыток, поздравляем!')
+            print(
+                f'Вы угадали число {number_to_guess} за {count_try} попыток, поздравляем!'
+            )
             break
     print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
     play_again()
@@ -57,5 +61,6 @@ def main():
     max_number = get_max_number_to_guess()
     number_to_guess = get_number_to_guess(max_number)
     game(number_to_guess, max_number)
+
 
 main()
