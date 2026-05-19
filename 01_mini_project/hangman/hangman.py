@@ -110,7 +110,6 @@ def play(word):
     tries = 6
     count = 0
     print('Давайте играть в угадайку слов!')
-    print(word)
 
     while not guessed:
         print()
