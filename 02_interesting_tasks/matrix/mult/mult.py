@@ -6,7 +6,6 @@ matrix_b = [[int(num) for num in input().split()] for _ in range(m)]
 matrix_c = [[0] * k for _ in range(n)]
 
 
-
 for i in range(n):
     for j in range(k):
         for q in range(m):
