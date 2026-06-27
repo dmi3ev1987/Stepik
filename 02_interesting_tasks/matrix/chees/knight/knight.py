@@ -11,7 +11,7 @@ moves = [
     [row + 1, col + 2],
     [row + 1, col - 2],
     [row - 1, col + 2],
-    [row - 1, col - 2]
+    [row - 1, col - 2],
 ]
 
 for move in moves:
